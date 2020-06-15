@@ -7,6 +7,11 @@
 </head>
 <body style="background-color:yellow;">
   <img style="display:block;margin:auto;width:100%;height:200px;" src="peelogo.gif">
-  <img style="width:1000px;height:400px;display:block;margin:auto;margin-top:5%;border:solid;border-color:#E6E662" src="man.png" alt="old">
+  <img style="width:1000px;height:400px;display:block;margin:auto;margin-top:5%;border:solid;border-color:#E6E662" id="oldman" src="man.png" alt="old">
+  <script>
+    const numFiles = 137
+    filename = "./oldmen/" + String(Math.floor(Math.random() * numFiles)) + ".png" 
+    document.getElementById("oldman").src = filename
+  </script>
 </body>
 </html>
